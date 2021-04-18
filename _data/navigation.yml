@@ -1,14 +1,8 @@
 # main links
 main:
   - title: "CV"
-    url: /lorem-ipsum
-  - title: "Blog Posts"
-    url: /lorem-ipsum
+    url: /cv
+  - title: "Short Posts"
+    url: /short-posts
   - title: "About"
-    url: /lorem-ipsum
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+    url: /about
