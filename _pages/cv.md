@@ -1,7 +1,7 @@
 ---
 layout: cv
 title: "Shahnewaz Leon's CV"
-permalink: /cv/
+permalink: /cv
 ---
 
 <h1> SHAHNEWAZ LEON </h1>
@@ -11,7 +11,7 @@ permalink: /cv/
 
 About Me
 --------------------
-I am a Software Engineer with more than five years of professional experience designing and developing software solutions. Worked in various domains and technologies including Java, NodeJS, PHP, MySQL, Postgres, AWS services, etc. 
+I am a Software Engineer with more than six years of professional experience designing and developing software solutions. Worked in various domains and technologies including Java, NodeJS, PHP, MySQL, Postgres, AWS services, etc. 
 
 I am a strong believer in the power of technology to make people's lives easier. 
 
@@ -19,9 +19,9 @@ I am a strong believer in the power of technology to make people's lives easier.
 Professional Experience
 --------------------
 Mar 2019 — Present
-:   ### Technical Lead at Monstar Lab Bangladesh
+:   ### Senior Backend Engineer II at Monstar Lab Bangladesh
 
-    As a Technical Lead, my responsibilities range from collecting requirements from the clients to designing the system architecture, application architecture, actively taking part in the development and testing tasks and in general making sure the smooth development and deployment of software applications. I have experience in leading teams comprising members from multiple countries and from multiple domains(both tech and business).
+    As a Senior Backend Engineer, my responsibilities range from collecting requirements from the clients to designing the system architecture, application architecture, actively taking part in the development and testing tasks and in general making sure the smooth development and deployment of software applications. I have experience in leading teams comprising members from multiple countries from different backgrounds.
 
 
 Jul 2017 – Feb 2019
@@ -35,14 +35,6 @@ Apr 2016 – June 2017
 
     I was responsible for developing and maintaining the backend RESTful web services that powered the web and mobile applications of one of the leading classified ads sites in Bangladesh - Ekhanei.com. I also shaped up the reporting system that generated various kinds of reports for internal performance tracking and taking business decisions.
 
-    #### Key tools and technologies:
-
-    - PHP
-    - Postgresql
-    - NodeJS
-    - Elasticsearch
-    - Redis
-    - AWS Lambda, Dynamodb, Kinesis
 
 Feb 2016 – Aug 2016
 :   ### Guest Lecturer — Jahangirnagar University
@@ -83,5 +75,3 @@ Blogging
 
 Movies/Series
 :   I enjoy a well made movie or tv series. My favourite genre is Science Fiction. Most favourite movie is *Schindler's List* and most favourite tv series is *Sherelock Holmes* played by Benedict Cumberbatch. Most favourite doctor is the *Eleventh Doctor, Matt Smith*.
-
-###### CV last updated: April 19, 2021; still a work in progress
