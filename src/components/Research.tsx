@@ -242,14 +242,16 @@ export default function Research() {
           {/* Fade hint at bottom to signal scrollability */}
           <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-panel to-transparent z-10 rounded-b-xl" />
           <div
-            className="flex flex-col gap-6 overflow-y-auto pr-1"
+            className="overflow-y-auto pr-1"
             style={{ maxHeight: '820px' }}
           >
+            <div className="flex flex-col gap-6">
             {projects.map((p) => (
               <ProjectCard key={p.id} p={p} />
             ))}
             {/* Bottom padding so last card clears the fade */}
-            <div className="h-8 shrink-0" />
+            <div className="h-8" />
+            </div>
           </div>
         </div>
       </div>
