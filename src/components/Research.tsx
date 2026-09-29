@@ -237,11 +237,20 @@ export default function Research() {
   return (
     <section id="research" className="bg-panel py-16">
       <div className="max-w-content mx-auto px-6">
-        <h2 className="text-2xl font-bold text-ink mb-10">Research</h2>
-        <div className="flex flex-col gap-8">
-          {projects.map((p) => (
-            <ProjectCard key={p.id} p={p} />
-          ))}
+        <h2 className="text-2xl font-bold text-ink mb-6">Research</h2>
+        <div className="relative">
+          {/* Fade hint at bottom to signal scrollability */}
+          <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-panel to-transparent z-10 rounded-b-xl" />
+          <div
+            className="flex flex-col gap-6 overflow-y-auto pr-1"
+            style={{ maxHeight: '820px' }}
+          >
+            {projects.map((p) => (
+              <ProjectCard key={p.id} p={p} />
+            ))}
+            {/* Bottom padding so last card clears the fade */}
+            <div className="h-8 shrink-0" />
+          </div>
         </div>
       </div>
     </section>
