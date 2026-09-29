@@ -12,3 +12,7 @@ out/
 
 # debug
 npm-debug.log*
+
+# tooling artifacts
+.playwright-mcp/
+.claude/
