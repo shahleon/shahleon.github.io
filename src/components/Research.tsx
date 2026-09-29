@@ -66,7 +66,7 @@ const projects: Project[] = [
     venue: 'HCII 2026',
     badge: null,
     description:
-      'L2N represents a codebase as a directed graph of methods and files and searches it with beam search guided by a heuristic learned for that specific repository. A structured-perceptron training procedure updates feature weights across repository-specific training pairs until the weights converge.',
+      'Standard code search tools treat every repository alike. They rely on general models that ignore the structure and history specific to the codebase at hand. L2N represents a repository as a directed graph of methods and files and guides beam search with a heuristic trained on that repository\'s own navigation history. Its advantage over both keyword search and neural code models grows as repositories get larger.',
     result:
       'On large repositories, mean reciprocal rank of the relevant function rose from 0.55 to 0.94, beating Lucene and both zero-shot and fine-tuned UniXcoder across six open-source Python repositories. The advantage widened as repositories grew.',
     doi: '10.1007/978-3-032-31048-4_21',
@@ -91,7 +91,7 @@ const projects: Project[] = [
     venue: 'HCII 2026',
     badge: null,
     description:
-      'Ten three-person teams debugged a real defect in the open-source reference manager JabRef while we recorded their navigation and communication. The study extended information-goal and foraging-strategy taxonomies from individual to team-level goals and behaviors.',
+      'We understand how individual developers navigate code, but most real debugging unfolds in teams, where what a teammate says or does can redirect where you look next. Ten three-person teams debugged a real defect in JabRef while we recorded their navigation and communication. We coded 3,248 strategy events to identify which served individual goals and which were triggered by the team. More than a third were driven by the team, making team context a structural layer of debugging, not just background noise.',
     result:
       '36.1% of coded strategy events served team-originating goals, showing that collaboration is a persistent layer of debugging activity rather than overhead on individual work.',
     doi: '10.1007/978-3-032-30781-1_17',
@@ -109,7 +109,7 @@ const projects: Project[] = [
     venue: 'CHI 2026',
     badge: 'Best Paper Honorable Mention',
     description:
-      "PFIS-T predicts a developer's next navigation from teammates' recent navigation (implicit cues that decay over time) and from code mentioned in team conversation (explicit cues). It is the first computational model to predict social information foraging step by step during synchronous teamwork.",
+      "Existing models predict where a developer will navigate next based on their own history. None account for what teammates are doing or saying in real time. PFIS-T combines implicit cues from teammates' recent moves and explicit cues from code entities mentioned in conversation to predict each developer's next step during synchronous teamwork. The rate of steps the model could not explain at all fell for nine of ten teams, showing that social context carries navigational signal that individual history alone cannot capture.",
     result:
       'Predicted 81.5% of navigations across ten teams, covering up to 57.1% more steps than the strongest individual baseline. The rate of steps the model could not predict at all fell from 33.63% to 21.06%, and fell for nine of ten teams.',
     doi: '10.1145/3772318.3791506',
@@ -133,7 +133,7 @@ const projects: Project[] = [
     venue: 'VL/HCC 2026 (to appear)',
     badge: null,
     description:
-      "A Markov transition model built from prior teams' traces predicts a new team's navigation from its very first step, before any session history accumulates. Call-graph expansion of the candidates extends reach beyond what was directly observed by prior teams.",
+      "Models that learn from a team's own session cannot make predictions at session start, when no history has accumulated. But teams working the same task often follow similar paths. We built a Markov transition model on prior teams' navigation traces and used call-graph expansion to extend its reach beyond what those teams directly visited. Only a handful of prior teams proved sufficient to make the model competitive, suggesting that what limits navigation prediction is available behavioral history, not model sophistication.",
     result:
       'Hit@10 of 0.804, against 0.659 for PFIS-T on the same steps. Four prior teams were sufficient. The prior runs in under 10 ms, compared to a median of 153 seconds per step for the 32B local LLM.',
     doi: null,
@@ -238,6 +238,26 @@ export default function Research() {
     <section id="research" className="bg-panel py-16">
       <div className="max-w-content mx-auto px-6">
         <h2 className="text-2xl font-bold text-ink mb-6">Research</h2>
+
+        <div className="mb-10 space-y-4 text-sm text-ink leading-relaxed max-w-2xl">
+          <p>
+            Most of the work of software development is not writing new code but making sense of code that already exists. Before changing a system, a developer has to find the relevant parts first. Existing tools treat every codebase the same, relying on generic models that ignore the structure and history of the repository at hand.
+          </p>
+          <p>
+            My research asks what happens when we take that context seriously. I studied code navigation at three levels: how individual developers search a repository, how teams navigate together and influence each other, and how traces from past sessions can guide a new team before it has taken a single step.
+          </p>
+          <p>
+            The findings point toward tools that learn from the people and history already embedded in a codebase. As AI-generated code makes repositories larger and less familiar, that capacity may matter more than it ever has.
+          </p>
+          <p className="text-muted">
+            This work was conducted in the{' '}
+            <a href="https://skuttal.github.io/skk/" target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">
+              Human Factors + Experience Engineering (HFXE) Lab
+            </a>{' '}
+            at NC State, under the supervision of Sandeep Kaur Kuttal.
+          </p>
+        </div>
+
         <div className="relative">
           {/* Fade hint at bottom to signal scrollability */}
           <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-panel to-transparent z-10 rounded-b-xl" />
