@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - navigation:
+    - heading "Skip links" [level=2] [ref=e2]
+    - list:
+      - listitem:
+        - link "Skip to primary navigation" [ref=e3] [cursor=pointer]:
+          - /url: "#site-nav"
+      - listitem:
+        - link "Skip to content" [ref=e4] [cursor=pointer]:
+          - /url: "#main"
+      - listitem:
+        - link "Skip to footer" [ref=e5] [cursor=pointer]:
+          - /url: "#footer"
+  - navigation [ref=e9]:
+    - link [ref=e10] [cursor=pointer]:
+      - /url: /
+      - img "Leons' Musings" [ref=e11]
+    - link "Leons' Musings" [ref=e12] [cursor=pointer]:
+      - /url: /
+    - list [ref=e13]:
+      - listitem [ref=e14]:
+        - link "CV" [ref=e15] [cursor=pointer]:
+          - /url: /cv
+      - listitem [ref=e16]:
+        - link "Short Posts" [ref=e17] [cursor=pointer]:
+          - /url: /short-posts
+      - listitem [ref=e18]:
+        - link "About" [ref=e19] [cursor=pointer]:
+          - /url: /about
+    - button "Toggle search" [ref=e20] [cursor=pointer]
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - img "Shahnewaz Leon" [ref=e29]
+      - generic [ref=e30]:
+        - heading "Shahnewaz Leon" [level=3] [ref=e31]
+        - paragraph [ref=e33]: A Software Engineer by trade, a human by nature
+      - list [ref=e35]:
+        - listitem [ref=e36]:
+          - generic [aria-hidden] [ref=e37]: 
+          - text: Dhaka, Bangladesh
+        - listitem [ref=e38]:
+          - link "Email" [ref=e39] [cursor=pointer]:
+            - /url: mailto:leon.it.ju@gmail.com
+            - generic [aria-hidden] [ref=e40]: 
+            - text: Email
+        - listitem [ref=e41]:
+          - link "Twitter" [ref=e42] [cursor=pointer]:
+            - /url: https://twitter.com/ShahnewazLeon
+            - generic [aria-hidden] [ref=e43]: 
+            - text: Twitter
+        - listitem [ref=e44]:
+          - link "Facebook" [ref=e45] [cursor=pointer]:
+            - /url: https://facebook.com/leon.shahnewaz
+            - generic [aria-hidden] [ref=e46]: 
+            - text: Facebook
+        - listitem [ref=e47]:
+          - link "GitHub" [ref=e48] [cursor=pointer]:
+            - /url: https://github.com/shahleon
+            - generic [aria-hidden] [ref=e49]: 
+            - text: GitHub
+    - generic [ref=e50]:
+      - heading [level=1]
+      - heading "Recent posts" [level=3] [ref=e51]
+      - generic [ref=e52]:
+        - article [ref=e54]:
+          - heading [level=2] [ref=e55]:
+            - link "Exclude Post from Search Index" [ref=e56] [cursor=pointer]:
+              - /url: /jekyll/post-exclude-search/
+          - paragraph [ref=e57]:
+            - generic [ref=e58]:
+              - generic [aria-hidden] [ref=e59]: 
+              - time [ref=e60]: November 28, 2017
+            - generic [ref=e61]: •
+            - generic [ref=e62]:
+              - generic [aria-hidden] [ref=e63]: 
+              - text: less than 1 minute read
+          - paragraph [ref=e64]: "This post should not appear in the search index because it has the following YAML Front Matter:"
+        - article [ref=e66]:
+          - heading [level=2] [ref=e67]:
+            - 'link "Layout: Header Video" [ref=e68] [cursor=pointer]':
+              - /url: /layout/uncategorized/layout-header-video/
+          - paragraph [ref=e69]:
+            - generic [ref=e70]:
+              - generic [aria-hidden] [ref=e71]: 
+              - time [ref=e72]: January 23, 2017
+            - generic [ref=e73]: •
+            - generic [ref=e74]:
+              - generic [aria-hidden] [ref=e75]: 
+              - text: 1 minute read
+          - paragraph [ref=e76]: This post should display a header with a responsive video, if the theme supports it.
+        - article [ref=e78]:
+          - heading [level=2] [ref=e79]:
+            - link "Gemified Theme – Beta Release" [ref=e80] [cursor=pointer]:
+              - /url: /jekyll/gemified-theme-beta/
+          - paragraph [ref=e81]:
+            - generic [ref=e82]:
+              - generic [aria-hidden] [ref=e83]: 
+              - time [ref=e84]: October 6, 2016
+            - generic [ref=e85]: •
+            - generic [ref=e86]:
+              - generic [aria-hidden] [ref=e87]: 
+              - text: 4 minute read
+          - paragraph [ref=e88]: Hot on the heels of Jekyll v3.3.0 is a beta release of Minimal Mistakes… as a gemified theme.
+        - article [ref=e90]:
+          - heading [level=2] [ref=e91]:
+            - link "Gemified Theme – Alpha Release" [ref=e92] [cursor=pointer]:
+              - /url: /jekyll/gemified-theme-alpha/
+          - paragraph [ref=e93]:
+            - generic [ref=e94]:
+              - generic [aria-hidden] [ref=e95]: 
+              - time [ref=e96]: September 21, 2016
+            - generic [ref=e97]: •
+            - generic [ref=e98]:
+              - generic [aria-hidden] [ref=e99]: 
+              - text: 5 minute read
+          - paragraph [ref=e100]: Jekyll themes distributed as Ruby gems are finally here to make installing and upgrading much easier. Gone are the days of forking a repo just to “install it...
+        - article [ref=e102]:
+          - heading [level=2] [ref=e103]:
+            - link "Welcome to Jekyll!" [ref=e104] [cursor=pointer]:
+              - /url: /jekyll/welcome-to-jekyll/
+          - paragraph [ref=e105]:
+            - generic [ref=e106]:
+              - generic [aria-hidden] [ref=e107]: 
+              - time [ref=e108]: February 24, 2016
+            - generic [ref=e109]: •
+            - generic [ref=e110]:
+              - generic [aria-hidden] [ref=e111]: 
+              - text: 1 minute read
+          - paragraph [ref=e112]: You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...
+      - navigation [ref=e113]:
+        - list:
+          - listitem [ref=e114]:
+            - link:
+              - /url: "#"
+              - text: Previous
+          - listitem [ref=e115]:
+            - link "1":
+              - /url: "#"
+          - listitem [ref=e116]:
+            - link "2" [ref=e117] [cursor=pointer]:
+              - /url: /page2/
+          - listitem [ref=e118]:
+            - link "Next" [ref=e119] [cursor=pointer]:
+              - /url: /page2/
+  - contentinfo [ref=e121]:
+    - list [ref=e123]:
+      - listitem [ref=e124]:
+        - strong [ref=e125]: "Follow:"
+      - listitem [ref=e126]:
+        - link "Twitter" [ref=e127] [cursor=pointer]:
+          - /url: https://twitter.com/ShahnewazLeon
+          - generic [aria-hidden] [ref=e128]: 
+          - text: Twitter
+      - listitem [ref=e129]:
+        - link "Facebook" [ref=e130] [cursor=pointer]:
+          - /url: https://facebook.com/leon.shahnewaz
+          - generic [aria-hidden] [ref=e131]: 
+          - text: Facebook
+      - listitem [ref=e132]:
+        - link "GitHub" [ref=e133] [cursor=pointer]:
+          - /url: https://github.com/shahleon
+          - generic [aria-hidden] [ref=e134]: 
+          - text: GitHub
+      - listitem [ref=e135]:
+        - link "Feed" [ref=e136] [cursor=pointer]:
+          - /url: /feed.xml
+          - generic [aria-hidden] [ref=e137]: 
+          - text: Feed
+    - generic [ref=e138]:
+      - text: © 2022 Shahnewaz Leon. Powered by
+      - link "Jekyll" [ref=e139] [cursor=pointer]:
+        - /url: https://jekyllrb.com
+      - text: "&"
+      - link "Minimal Mistakes" [ref=e140] [cursor=pointer]:
+        - /url: https://mademistakes.com/work/minimal-mistakes-jekyll-theme/
+      - text: .

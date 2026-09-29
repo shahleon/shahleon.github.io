@@ -1,0 +1,177 @@
+- generic [active] [ref=f1e1]:
+  - navigation [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Shahnewaz Leon" [ref=f1e4] [cursor=pointer]:
+        - /url: "#about"
+      - generic [ref=f1e5]:
+        - link "Research" [ref=f1e6] [cursor=pointer]:
+          - /url: "#research"
+        - link "Publications" [ref=f1e7] [cursor=pointer]:
+          - /url: "#publications"
+        - link "Experience" [ref=f1e8] [cursor=pointer]:
+          - /url: "#experience"
+        - link "CV" [ref=f1e9] [cursor=pointer]:
+          - /url: "#cv"
+  - main [ref=f1e10]:
+    - generic [ref=f1e12]:
+      - img "Shahnewaz Leon" [ref=f1e14]
+      - generic [ref=f1e15]:
+        - heading "Shahnewaz Leon" [level=1] [ref=f1e16]
+        - paragraph [ref=f1e17]: PhD in Computer Science · NC State University · 2026
+        - paragraph [ref=f1e18]: I study how programmers navigate code, and how that navigation can be predicted from the behavior of the people around them.
+        - paragraph [ref=f1e19]: Before the PhD, I spent eight years as a software engineer in Dhaka, building backend systems, distributed services, and search infrastructure.
+        - generic [ref=f1e20]:
+          - link "sleon3@ncsu.edu" [ref=f1e21] [cursor=pointer]:
+            - /url: mailto:sleon3@ncsu.edu
+          - link "GitHub" [ref=f1e22] [cursor=pointer]:
+            - /url: https://github.com/shahleon
+          - link "LinkedIn" [ref=f1e23] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/shahnewaz-leon/
+          - link "Google Scholar" [ref=f1e24] [cursor=pointer]:
+            - /url: https://scholar.google.com/citations?user=42p6FYoAAAAJ&hl=en&oi=ao
+    - generic [ref=f1e26]:
+      - heading "Research" [level=2] [ref=f1e27]
+      - generic [ref=f1e28]:
+        - generic [ref=f1e31]:
+          - generic [ref=f1e32]: Individual
+          - 'heading "Learning to Navigate (L2N): A Human-Centered Framework for Local Code Search" [level=3] [ref=f1e34]'
+          - paragraph [ref=f1e35]: HCII 2026
+          - paragraph [ref=f1e36]: L2N represents a codebase as a directed graph of methods and files and searches it with beam search guided by a heuristic learned for that specific repository. A structured-perceptron training procedure updates feature weights across repository-specific training pairs until the weights converge.
+          - paragraph [ref=f1e37]: On large repositories, mean reciprocal rank of the relevant function rose from 0.55 to 0.94, beating Lucene and both zero-shot and fine-tuned UniXcoder across six open-source Python repositories. The advantage widened as repositories grew.
+          - generic [ref=f1e38]: Weight-learning animation
+          - generic [ref=f1e40]:
+            - link "DOI" [ref=f1e41] [cursor=pointer]:
+              - /url: https://doi.org/10.1007/978-3-032-31048-4_21
+            - link "Replication package" [ref=f1e42] [cursor=pointer]:
+              - /url: https://doi.org/10.5281/zenodo.13755783
+        - generic [ref=f1e45]:
+          - generic [ref=f1e46]: Social
+          - 'heading "What Teams Seek and How They Seek It: Understanding Foraging Diets in Collaborative Software Debugging" [level=3] [ref=f1e48]'
+          - paragraph [ref=f1e49]: HCII 2026
+          - paragraph [ref=f1e50]: Ten three-person teams debugged a real defect in the open-source reference manager JabRef while we recorded their navigation and communication. The study extended information-goal and foraging-strategy taxonomies from individual to team-level goals and behaviors.
+          - paragraph [ref=f1e51]: 36.1% of coded strategy events served team-originating goals, showing that collaboration is a persistent layer of debugging activity rather than overhead on individual work.
+          - generic [ref=f1e52]: Study figure
+          - link "DOI" [ref=f1e55] [cursor=pointer]:
+            - /url: https://doi.org/10.1007/978-3-032-30781-1_17
+        - generic [ref=f1e58]:
+          - generic [ref=f1e59]:
+            - generic [ref=f1e60]: Social
+            - generic [ref=f1e61]: Best Paper Honorable Mention
+          - heading "Where Will They Click Next? A Social Foraging Model for Collaborating Teams" [level=3] [ref=f1e62]
+          - paragraph [ref=f1e63]: CHI 2026
+          - paragraph [ref=f1e64]: PFIS-T predicts a developer's next navigation from teammates' recent navigation (implicit cues that decay over time) and from code mentioned in team conversation (explicit cues). It is the first computational model to predict social information foraging step by step during synchronous teamwork.
+          - paragraph [ref=f1e65]: Predicted 81.5% of navigations across ten teams, covering up to 57.1% more steps than the strongest individual baseline. The rate of steps the model could not predict at all fell from 33.63% to 21.06%, and fell for nine of ten teams.
+          - generic [ref=f1e66]: Social scent animation
+          - generic [ref=f1e68]:
+            - link "DOI" [ref=f1e69] [cursor=pointer]:
+              - /url: https://doi.org/10.1145/3772318.3791506
+            - link "Replication package" [ref=f1e70] [cursor=pointer]:
+              - /url: https://doi.org/10.5281/zenodo.18459372
+        - generic [ref=f1e73]:
+          - generic [ref=f1e74]: Collective
+          - 'heading "The Power of the Collective: Cross-Session Behavioral Priors for Developer Navigation Prediction" [level=3] [ref=f1e76]'
+          - paragraph [ref=f1e77]: VL/HCC 2026 (to appear)
+          - paragraph [ref=f1e78]: A Markov transition model built from prior teams' traces predicts a new team's navigation from its very first step, before any session history accumulates. Call-graph expansion of the candidates extends reach beyond what was directly observed by prior teams.
+          - paragraph [ref=f1e79]: Hit@10 of 0.804, against 0.659 for PFIS-T on the same steps. Four prior teams were sufficient. The prior runs in under 10 ms, compared to a median of 153 seconds per step for the 32B local LLM.
+          - generic [ref=f1e80]: Collective pipeline figure
+          - link "Replication package" [ref=f1e83] [cursor=pointer]:
+            - /url: http://bit.ly/4eMlb5T
+    - generic [ref=f1e85]:
+      - heading "Publications" [level=2] [ref=f1e86]
+      - list [ref=f1e87]:
+        - listitem [ref=f1e88]:
+          - generic [ref=f1e89]: "1."
+          - generic [ref=f1e90]:
+            - generic [ref=f1e91]:
+              - strong [ref=f1e92]: Shahnewaz Leon
+              - text: ", Zhengdong Zhang, Prasad Tadepalli, and Sandeep Kaur Kuttal."
+            - paragraph [ref=f1e93]: "“Learning to Navigate (L2N): A Human-Centered Framework for Local Code Search.”"
+            - paragraph [ref=f1e94]: Artificial Intelligence in HCI, HCII 2026, Part IV, LNAI 16746, pp. 338–358. Springer Nature, 2026.
+            - generic [ref=f1e95]:
+              - link "DOI" [ref=f1e96] [cursor=pointer]:
+                - /url: https://doi.org/10.1007/978-3-032-31048-4_21
+              - link "Replication package" [ref=f1e97] [cursor=pointer]:
+                - /url: https://doi.org/10.5281/zenodo.13755783
+        - listitem [ref=f1e98]:
+          - generic [ref=f1e99]: "2."
+          - generic [ref=f1e100]:
+            - generic [ref=f1e101]:
+              - strong [ref=f1e102]: Shahnewaz Leon
+              - text: ", Abhishek Ravindra Desai, Sachin Kanth, Nour Mahmoud, and Sandeep Kaur Kuttal."
+            - paragraph [ref=f1e103]: "“What Teams Seek and How They Seek It: Understanding Foraging Diets in Collaborative Software Debugging.”"
+            - paragraph [ref=f1e104]: Learning and Collaboration Technologies, HCII 2026, Part II, LNCS 16732, pp. 258–276. Springer Nature, 2026.
+            - link "DOI" [ref=f1e106] [cursor=pointer]:
+              - /url: https://doi.org/10.1007/978-3-032-30781-1_17
+        - listitem [ref=f1e107]:
+          - generic [ref=f1e108]: "3."
+          - generic [ref=f1e109]:
+            - generic [ref=f1e110]:
+              - strong [ref=f1e111]: Shahnewaz Leon
+              - text: and Sandeep Kaur Kuttal.
+            - generic [ref=f1e112]: Best Paper Honorable Mention
+            - paragraph [ref=f1e113]: “Where Will They Click Next? A Social Foraging Model for Collaborating Teams.”
+            - paragraph [ref=f1e114]: Proceedings of CHI 2026, ACM, 2026.
+            - generic [ref=f1e115]:
+              - link "DOI" [ref=f1e116] [cursor=pointer]:
+                - /url: https://doi.org/10.1145/3772318.3791506
+              - link "Replication package" [ref=f1e117] [cursor=pointer]:
+                - /url: https://doi.org/10.5281/zenodo.18459372
+        - listitem [ref=f1e118]:
+          - generic [ref=f1e119]: "4."
+          - generic [ref=f1e120]:
+            - generic [ref=f1e121]:
+              - strong [ref=f1e122]: Shahnewaz Leon
+              - text: and Sandeep Kaur Kuttal.
+            - paragraph [ref=f1e123]: "“The Power of the Collective: Cross-Session Behavioral Priors for Developer Navigation Prediction.”"
+            - paragraph [ref=f1e124]: Proceedings of IEEE VL/HCC 2026. Accepted, to appear.
+            - link "Replication package" [ref=f1e126] [cursor=pointer]:
+              - /url: http://bit.ly/4eMlb5T
+    - generic [ref=f1e128]:
+      - heading "Professional Experience" [level=2] [ref=f1e129]
+      - generic [ref=f1e130]:
+        - generic [ref=f1e135]:
+          - generic [ref=f1e136]:
+            - heading "Instructor of Record" [level=3] [ref=f1e137]
+            - generic [ref=f1e138]: May 2026 – Aug 2026
+          - paragraph [ref=f1e139]: "CSC 216: Software Development Fundamentals · NC State University"
+          - paragraph [ref=f1e140]: Sole instructor of record for an undergraduate course. Managed teaching assistants and student code evaluation.
+        - generic [ref=f1e145]:
+          - generic [ref=f1e146]:
+            - heading "Senior Software Engineer" [level=3] [ref=f1e147]
+            - generic [ref=f1e148]: Aug 2017 – Jul 2022
+          - paragraph [ref=f1e149]: Monstarlab · Bangladesh
+          - paragraph [ref=f1e150]: Architected event-driven distributed microservices and automated CI/CD with Terraform, GitHub Actions, and AWS. Owned data aggregation pipelines for large-scale enterprise services in Spring Boot. Engineered serverless recruitment pipelines on AWS Lambda and EventBridge. Built the GeneLife genetic testing application with an audit trail pattern for customer DNA and health data and Stripe payment integration. Defined HLD and LLD, led technical specification reviews, and mentored junior engineers.
+        - generic [ref=f1e155]:
+          - generic [ref=f1e156]:
+            - heading "Backend Developer" [level=3] [ref=f1e157]
+            - generic [ref=f1e158]: Apr 2016 – Jul 2017
+          - paragraph [ref=f1e159]: Ekhanei.com · Bangladesh
+          - paragraph [ref=f1e160]: Scaled distributed backend infrastructure and real-time search indexing for an e-commerce platform serving over 1 million daily active users, using Elasticsearch and MySQL.
+        - generic [ref=f1e165]:
+          - generic [ref=f1e166]:
+            - heading "Software Developer" [level=3] [ref=f1e167]
+            - generic [ref=f1e168]: Jul 2015 – Mar 2016
+          - paragraph [ref=f1e169]: SekaiLab Bangladesh
+          - paragraph [ref=f1e170]: Built a dynamic influence-mapping and graph analytics engine inside an HR platform.
+        - generic [ref=f1e174]:
+          - generic [ref=f1e175]:
+            - heading "Software Engineer" [level=3] [ref=f1e176]
+            - generic [ref=f1e177]: Feb 2014 – Nov 2014
+          - paragraph [ref=f1e178]: Fronture Technologies · Bangladesh
+          - paragraph [ref=f1e179]: Automated CI build workflows in Team Foundation Server and developed backend REST services for enterprise time-tracking applications.
+    - generic [ref=f1e181]:
+      - heading "CV" [level=2] [ref=f1e182]
+      - paragraph [ref=f1e183]: Full curriculum vitae including education, publications, and skills.
+      - link "Download CV (PDF)" [ref=f1e184] [cursor=pointer]:
+        - /url: /resume.pdf
+  - contentinfo [ref=f1e185]:
+    - generic [ref=f1e186]:
+      - generic [ref=f1e187]: Shahnewaz Leon
+      - generic [ref=f1e188]:
+        - link "GitHub" [ref=f1e189] [cursor=pointer]:
+          - /url: https://github.com/shahleon
+        - link "LinkedIn" [ref=f1e190] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/shahnewaz-leon/
+        - link "Google Scholar" [ref=f1e191] [cursor=pointer]:
+          - /url: https://scholar.google.com/citations?user=42p6FYoAAAAJ&hl=en&oi=ao
+  - alert [ref=f1e192]
