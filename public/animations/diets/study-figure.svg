@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 500" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+  <defs>
+    <marker id="ab" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+      <path d="M0 0.5 L7 3.5 L0 6.5" fill="none" stroke="#2E6DB4" stroke-width="1.5" stroke-linejoin="round"/>
+    </marker>
+    <marker id="ap" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+      <path d="M0 0.5 L7 3.5 L0 6.5" fill="none" stroke="#7B3FB8" stroke-width="1.5" stroke-linejoin="round"/>
+    </marker>
+    <marker id="aps" markerWidth="9" markerHeight="9" refX="2" refY="3.5" orient="auto-start-reverse">
+      <path d="M0 0.5 L7 3.5 L0 6.5" fill="none" stroke="#7B3FB8" stroke-width="1.5" stroke-linejoin="round"/>
+    </marker>
+    <marker id="ag" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+      <path d="M0 0.5 L7 3.5 L0 6.5" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="500" fill="#FFFFFF"/>
+
+  <!-- Panel tints -->
+  <rect x="24" y="76" width="578" height="362" rx="12" fill="#EAF1FA" opacity="0.45"/>
+  <rect x="678" y="76" width="578" height="362" rx="12" fill="#F0E7F9" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="640" y="34" text-anchor="middle" fill="#1A1A1A" font-size="20" font-weight="700">Team Foraging Diets in Collaborative Software Debugging</text>
+  <text x="640" y="58" text-anchor="middle" fill="#5F6368" font-size="13">10 teams · 30 developers · JabRef open-source reference manager · 3,248 coded strategy events</text>
+
+  <!-- Divider -->
+  <line x1="640" y1="80" x2="640" y2="434" stroke="#D0D4D9" stroke-width="1" stroke-dasharray="5,4"/>
+  <circle cx="640" cy="258" r="22" fill="white" stroke="#D0D4D9" stroke-width="1"/>
+  <text x="640" y="263" text-anchor="middle" fill="#5F6368" font-size="13" font-weight="500">vs.</text>
+
+  <!-- ── LEFT: Individual goals ── -->
+  <text x="313" y="108" text-anchor="middle" fill="#2E6DB4" font-size="12" font-weight="700" letter-spacing="0.08em">INDIVIDUAL GOALS</text>
+
+  <!-- Developer circle -->
+  <circle cx="170" cy="248" r="44" fill="#EAF1FA" stroke="#2E6DB4" stroke-width="2"/>
+  <!-- Head -->
+  <circle cx="170" cy="232" r="12" fill="#2E6DB4"/>
+  <!-- Body -->
+  <path d="M145 270 Q145 256 170 256 Q195 256 195 270" fill="#2E6DB4"/>
+  <text x="170" y="310" text-anchor="middle" fill="#2E6DB4" font-size="12" font-weight="500">Developer</text>
+
+  <!-- Arrow dev → code -->
+  <path d="M214 238 L322 222" stroke="#2E6DB4" stroke-width="2" fill="none" marker-end="url(#ab)"/>
+  <text x="268" y="220" text-anchor="middle" fill="#5F6368" font-size="11" transform="rotate(-6,268,220)">navigates</text>
+
+  <!-- Code file -->
+  <rect x="324" y="186" width="78" height="90" rx="6" fill="white" stroke="#2E6DB4" stroke-width="1.5"/>
+  <rect x="324" y="186" width="30" height="12" rx="3" fill="#2E6DB4"/>
+  <line x1="324" y1="202" x2="402" y2="202" stroke="#D0D4D9" stroke-width="1"/>
+  <line x1="336" y1="214" x2="394" y2="214" stroke="#D0D4D9" stroke-width="1.5"/>
+  <line x1="336" y1="223" x2="388" y2="223" stroke="#D0D4D9" stroke-width="1.5"/>
+  <line x1="336" y1="232" x2="392" y2="232" stroke="#D0D4D9" stroke-width="1.5"/>
+  <line x1="336" y1="241" x2="386" y2="241" stroke="#D0D4D9" stroke-width="1.5"/>
+  <line x1="336" y1="250" x2="391" y2="250" stroke="#D0D4D9" stroke-width="1.5"/>
+  <line x1="336" y1="259" x2="384" y2="259" stroke="#D0D4D9" stroke-width="1.5"/>
+  <text x="363" y="291" text-anchor="middle" fill="#5F6368" font-size="11">JabRef</text>
+
+  <!-- Arrow code → dev (return) -->
+  <path d="M324 262 L216 264" stroke="#2E6DB4" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#ab)"/>
+  <text x="270" y="278" text-anchor="middle" fill="#5F6368" font-size="10">next step</text>
+
+  <text x="313" y="348" text-anchor="middle" fill="#2E6DB4" font-size="12">Navigation driven by own context</text>
+
+  <!-- Left stat badge -->
+  <rect x="173" y="366" width="280" height="54" rx="27" fill="#2E6DB4"/>
+  <text x="313" y="389" text-anchor="middle" fill="white" font-size="25" font-weight="700">63.9%</text>
+  <text x="313" y="408" text-anchor="middle" fill="rgba(255,255,255,0.88)" font-size="11">individual-originating strategies</text>
+
+  <!-- ── RIGHT: Team goals ── -->
+  <text x="967" y="108" text-anchor="middle" fill="#7B3FB8" font-size="12" font-weight="700" letter-spacing="0.08em">TEAM-ORIGINATING GOALS</text>
+
+  <!-- D1 (top-center) -->
+  <circle cx="967" cy="162" r="38" fill="#F0E7F9" stroke="#7B3FB8" stroke-width="2"/>
+  <circle cx="967" cy="148" r="11" fill="#7B3FB8"/>
+  <path d="M947 178 Q947 166 967 166 Q987 166 987 178" fill="#7B3FB8"/>
+  <text x="967" y="214" text-anchor="middle" fill="#7B3FB8" font-size="11" font-weight="500">D1</text>
+
+  <!-- D2 (bottom-left) -->
+  <circle cx="818" cy="322" r="38" fill="#F0E7F9" stroke="#7B3FB8" stroke-width="2"/>
+  <circle cx="818" cy="308" r="11" fill="#7B3FB8"/>
+  <path d="M798 338 Q798 326 818 326 Q838 326 838 338" fill="#7B3FB8"/>
+  <text x="818" y="374" text-anchor="middle" fill="#7B3FB8" font-size="11" font-weight="500">D2</text>
+
+  <!-- D3 (bottom-right) -->
+  <circle cx="1116" cy="322" r="38" fill="#F0E7F9" stroke="#7B3FB8" stroke-width="2"/>
+  <circle cx="1116" cy="308" r="11" fill="#7B3FB8"/>
+  <path d="M1096 338 Q1096 326 1116 326 Q1136 326 1136 338" fill="#7B3FB8"/>
+  <text x="1116" y="374" text-anchor="middle" fill="#7B3FB8" font-size="11" font-weight="500">D3</text>
+
+  <!-- Communication arrows (bidirectional, purple) -->
+  <path d="M940 190 L845 296" stroke="#7B3FB8" stroke-width="2" fill="none" marker-end="url(#ap)" marker-start="url(#aps)"/>
+  <path d="M994 190 L1090 296" stroke="#7B3FB8" stroke-width="2" fill="none" marker-end="url(#ap)" marker-start="url(#aps)"/>
+  <path d="M856 322 L1078 322" stroke="#7B3FB8" stroke-width="2" fill="none" marker-end="url(#ap)" marker-start="url(#aps)"/>
+
+  <!-- "shares info" labels -->
+  <text x="880" y="234" text-anchor="middle" fill="#7B3FB8" font-size="10" transform="rotate(51,880,234)">shares info</text>
+  <text x="1054" y="234" text-anchor="middle" fill="#7B3FB8" font-size="10" transform="rotate(-51,1054,234)">shares info</text>
+  <text x="967" y="316" text-anchor="middle" fill="#7B3FB8" font-size="10">shares info</text>
+
+  <!-- Code file center -->
+  <rect x="928" y="228" width="78" height="82" rx="6" fill="white" stroke="#7B3FB8" stroke-width="1.5"/>
+  <rect x="928" y="228" width="30" height="12" rx="3" fill="#7B3FB8"/>
+  <line x1="928" y1="244" x2="1006" y2="244" stroke="#D0D4D9" stroke-width="1"/>
+  <line x1="940" y1="255" x2="998" y2="255" stroke="#D0D4D9" stroke-width="1.5"/>
+  <line x1="940" y1="264" x2="992" y2="264" stroke="#D0D4D9" stroke-width="1.5"/>
+  <line x1="940" y1="273" x2="996" y2="273" stroke="#D0D4D9" stroke-width="1.5"/>
+  <line x1="940" y1="282" x2="990" y2="282" stroke="#D0D4D9" stroke-width="1.5"/>
+  <line x1="940" y1="291" x2="995" y2="291" stroke="#D0D4D9" stroke-width="1.5"/>
+  <text x="967" y="323" text-anchor="middle" fill="#5F6368" font-size="11">JabRef</text>
+
+  <!-- Individual nav arrows to code (gray dashed) -->
+  <path d="M967 200 L967 228" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#ag)"/>
+  <path d="M850 302 L928 268" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#ag)"/>
+  <path d="M1084 302 L1006 268" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#ag)"/>
+
+  <!-- Legend -->
+  <line x1="695" y1="445" x2="720" y2="445" stroke="#7B3FB8" stroke-width="2" marker-end="url(#ap)" marker-start="url(#aps)"/>
+  <text x="726" y="449" fill="#5F6368" font-size="11">team communication</text>
+  <line x1="860" y1="445" x2="885" y2="445" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#ag)"/>
+  <text x="891" y="449" fill="#5F6368" font-size="11">individual navigation</text>
+
+  <text x="967" y="398" text-anchor="middle" fill="#7B3FB8" font-size="12">Navigation triggered by teammate actions or talk</text>
+
+  <!-- Right stat badge -->
+  <rect x="847" y="410" width="240" height="54" rx="27" fill="#7B3FB8"/>
+  <text x="967" y="433" text-anchor="middle" fill="white" font-size="25" font-weight="700">36.1%</text>
+  <text x="967" y="452" text-anchor="middle" fill="rgba(255,255,255,0.88)" font-size="11">team-originating strategies</text>
+
+  <!-- Illustrative notice -->
+  <text x="640" y="490" text-anchor="middle" fill="#9CA3AF" font-size="10" font-style="italic">Percentages from published data (HCII 2026). Developer icons are illustrative.</text>
+</svg>

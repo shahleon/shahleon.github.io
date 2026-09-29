@@ -20,7 +20,8 @@ type Project = {
   result: string
   doi: string | null
   replication: string | null
-  animations: Animation[]  // empty = placeholder still shown
+  animations: Animation[]
+  staticFigure?: string   // path to a static SVG/image used instead of stepper
 }
 
 // L2N captions come from the defense-deck player (animations-src/l2n/build.py).
@@ -96,6 +97,7 @@ const projects: Project[] = [
     doi: '10.1007/978-3-032-30781-1_17',
     replication: null,
     animations: [],
+    staticFigure: '/animations/diets/study-figure.svg',
   },
   {
     id: 'pfist',
@@ -117,13 +119,7 @@ const projects: Project[] = [
         frames: pfistAFrames,
         illustrative: true,
         accentColor: '#7c3aed',
-        label: 'Pass A · Coverage: how a missed step becomes reachable',
-      },
-      {
-        frames: pfistBFrames,
-        illustrative: true,
-        accentColor: '#7c3aed',
-        label: 'Pass B · The social gate and its saturating curve',
+        label: 'Coverage: how a missed step becomes reachable through social cues',
       },
     ],
   },
@@ -187,8 +183,13 @@ function ProjectCard({ p }: { p: Project }) {
           {p.result}
         </p>
 
-        {/* Animations or placeholder */}
-        {p.animations.length > 0 ? (
+        {/* Figure: static SVG, stepper, or placeholder */}
+        {p.staticFigure ? (
+          <div className="rounded-lg border border-line overflow-hidden mb-5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={p.staticFigure} alt={`Figure for ${p.title}`} className="w-full h-auto block"/>
+          </div>
+        ) : p.animations.length > 0 ? (
           <div className="space-y-4 mb-5">
             {p.animations.map((anim, i) => (
               <AnimationStepper key={i} {...anim} />
@@ -237,7 +238,7 @@ export default function Research() {
     <section id="research" className="bg-panel py-16">
       <div className="max-w-content mx-auto px-6">
         <h2 className="text-2xl font-bold text-ink mb-10">Research</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-8">
           {projects.map((p) => (
             <ProjectCard key={p.id} p={p} />
           ))}
