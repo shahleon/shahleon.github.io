@@ -239,7 +239,7 @@ export default function Research() {
       <div className="max-w-content mx-auto px-6">
         <h2 className="text-2xl font-bold text-ink mb-6">Research</h2>
 
-        <div className="mb-10 space-y-4 text-sm text-ink leading-relaxed max-w-2xl">
+        <div className="mb-10 space-y-4 text-sm text-ink leading-relaxed">
           <p>
             Most of the work of software development is not writing new code but making sense of code that already exists. Before changing a system, a developer has to find the relevant parts first. Existing tools treat every codebase the same, relying on generic models that ignore the structure and history of the repository at hand.
           </p>
